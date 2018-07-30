@@ -22,8 +22,8 @@ if("$com"=="push"){
 }
 
 else {
-    new File("/tmp/${ART_ID}-${version}.tar.gz").withOutputStream { out ->
-        def url = new URL("http://${nexus_path}/repository/${repo}/${group}/${artifact}/${VER}/${artifact}-${version}.tar.gz").openConnection()
+    new File("/tmp/${artifact}-${version}.tar.gz").withOutputStream { out ->
+        def url = new URL("http://${nexus_path}/repository/${repo}/${group}/${artifact}/${version}/${artifact}-${version}.tar.gz").openConnection()
         out << url.inputStream
     }
 }
