@@ -1,0 +1,5 @@
+{
+  "name": "jenkins_groovy",
+  "content": " repository.createMavenHosted('public')",
+  "type": "groovy"
+}
