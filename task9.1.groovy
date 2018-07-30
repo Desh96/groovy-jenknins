@@ -4,8 +4,6 @@ def artifact = "helloworld"
 def version = "1.${BUILD_NUMBER}"
 def repo = "project-releases"
 def com = "push" 
-def log_pass = "admin:admin123"
-
 
 if("$com"=="push"){
     def File = new File ("/tmp/${artifact}-${version}.tar.gz").getBytes()
