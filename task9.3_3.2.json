@@ -1,0 +1,5 @@
+{
+  "name": "Delete_User",
+  "content": "security.securitySystem.deleteUser('jenkins_groovy')",
+  "type": "groovy"
+}
