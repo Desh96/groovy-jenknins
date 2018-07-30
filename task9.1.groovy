@@ -2,7 +2,7 @@ def nexus_path = "192.168.1.2:8081"
 def group = "project"
 def artifact = "helloworld"
 def version = "1.${BUILD_NUMBER}"
-def repo = "jenkins-repo"
+def repo = "project-releases"
 def com = "push" 
 def log_pass = "admin:admin123"
 
