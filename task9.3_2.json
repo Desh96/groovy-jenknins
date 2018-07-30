@@ -1,0 +1,5 @@
+{
+  "name": "AddUser",
+  "content": "security.addUser('jenkins_groovy', 'jenkins_groovy', 'jenkins_groovy', 'jenkins_groovy@epam.com', true, 'jenkins_groovy', ['nx-admin'])",
+  "type": "groovy"
+}
