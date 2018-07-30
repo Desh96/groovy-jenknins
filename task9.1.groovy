@@ -8,7 +8,7 @@ def com = "push"
 if("$com"=="push"){
     def File = new File ("/tmp/${artifact}-${version}.tar.gz").getBytes()
     def con = new URL("http://${nexus_path}/repository/${repo}/${group}/${artifact}/${version}/${artifact}-${version}.tar.gz").openConnection()
-    def authString = "admin:admin123".getBytes().encodeBase64().toString()
+    def authString = "password:password".getBytes().encodeBase64().toString()
     con.setRequestProperty( "Authorization", "Basic ${authString}")
     con.setRequestMethod("PUT")
     con.doOutput = true
